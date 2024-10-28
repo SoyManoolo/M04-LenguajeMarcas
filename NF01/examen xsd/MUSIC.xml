@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MUSIC xmlns="https://elpuig.xeill.net/MP04/XSD"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://elpuig.xeill.net/MP04/XSD MUSIC.xsd">
+
+    <MUSIC>
+        <EXTENDED plataform="CD">
+            <TITLE>Nobody's Journey</TITLE>
+            <ARTIST>Nolah</ARTIST>
+            <COMPANY>Click Records</COMPANY>
+            <YEAR>2017</YEAR>
+        </EXTENDED>
+        <LONG plataform="MP3">
+            <TITLE>Hide your heart</TITLE>
+            <ARTIST>Bonnie Tayler</ARTIST>
+            <COMPANY>CBS Records</COMPANY>
+            <YEAR>1988</YEAR>
+        </LONG>
+        <LONG plataform="streaming">
+            <TITLE>Greatest Hits</TITLE>
+            <ARTIST>Dolly Parton</ARTIST>
+            <COMPANY>RCA</COMPANY>
+            <YEAR>1982</YEAR>
+        </LONG>
+    </MUSIC>
+</MUSIC>

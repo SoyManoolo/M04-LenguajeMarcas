@@ -1,0 +1,9 @@
+<root xmlns:h ="http://www.aguacate.com"
+xmlns:f="http://www.palta.com"
+xmlns:t="http://www.si.com">
+<bancs>
+<h:banc nom="La Caixa" />
+<f:banc color="marron" />
+<t:banc individu="120" />
+</bancs>
+</root>

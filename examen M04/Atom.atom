@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"> <!-- He cambiado el formato del feed de RSS a atom, cambiando 'rss' por 'feed' y ya que
+    'channel' no tiene equivalente en atom y viene 'incluido' en feed, lo he eliminado -->
+    <title>Sample Feed - Favorite RSS Related Software &amp; Resources</title>
+    <id>http://www.feedforall.com/</id>
+    <subtitle>Take a look at some of FeedForAll&apos;s favorite software and resources for
+        learning more about RSS.</subtitle> <!-- He cambiado la etiqueta 'description' por 'subtitle' ya que no se puede hacer uso de 'summary' fuera de un entry-->
+    <link href = "http://www.feedforall.com"/> <!-- He añadido el atributo 'href' a la etiqueta link debido a que en atom no ponemos la URL dentro de la etiqueta-->
+    <category term="Computers/Software/Internet/Site Management/Content Management"/> <!-- He eliminado el atributo domain, ya que en Atom no se hace uso de el y además he añadido el atributo term para ahí poner el texto que teniamos en la etiqueta 'category'-->
+    <!-- He eliminado la etiqueta 'copyright', ya que no se hace uso de ella en un feed atom-->
+    <updated>2004-11-02T10:00:00Z</updated> <!-- He cambiado la etiqueta 'lastBuildDate' por la equivalente en atom, 'updated' que es la fecha y hora donde se prodjo la última actualización, también he cambiado la manera de poner la fecha y la hora-->
+    <entry>
+        <title>RSS Resources</title>
+        <summary>Be sure to take a look at some of our favorite RSS Resources&lt;br&gt;
+            &lt;a href=&quot;http://www.rss-specifications.com&quot;&gt;RSS
+            Specifications&lt;/a&gt;&lt;br&gt;
+            &lt;a href=&quot;http://www.blog-connection.com&quot;&gt;Blog
+            Connection&lt;/a&gt;&lt;br&gt;
+            &lt;br&gt;</summary> <!-- He cambiado la etiqueta 'description' por su equivalente en atom, 'summary'-->
+        <author>
+            <name>Paco</name> <!-- He añadido la etiqueta 'author' debido a que el validador me lo pide junto con la etiqueta hijo 'name'-->
+        </author>
+        <link href= "http://www.feedforall.com/"/> <!-- He añadido el atributo 'href' a la etiqueta link debido a que en atom no ponemos la URL dentro de la etiqueta-->
+        <id>http://www.feedforall.com/</id>
+        <updated>2004-10-02T14:00:00Z</updated> <!-- He cambiado la etiqueta 'pubDated' por su etiqueta equivalente en atom, 'updated', también he cambiado la manera de poner la fecha y la hora-->
+    </entry>
+    <entry>
+        <title>Recommended Desktop Feed Reader Software</title>
+        <summary>&lt;b&gt;FeedDemon&lt;/b&gt; enables you to quickly read and gather information
+            from hundreds of web sites - without having to visit them. Don&apos;t waste any more
+            time checking your favorite web sites for updates. Instead, use FeedDemon and make them
+            come to you. &lt;br&gt;
+            More &lt;a
+            href=&quot;http://store.esellerate.net/a.asp?c=1_SKU5139890208_AFL403073819&quot;&gt;FeedDemon
+            Information&lt;/a&gt;</summary> <!-- He cambiado la etiqueta 'description' por su equivalente en atom, 'summary'-->
+        <author>
+            <name>Paco</name> <!-- He añadido la etiqueta 'author' debido a que el validador me lo pide junto con la etiqueta hijo 'name'-->
+        </author>
+        <link href= "http://www.feedforall.com/feedforall-partners.htm"/> <!-- He añadido el atributo 'href' a la etiqueta link debido a que en atom no ponemos la URL dentro de la etiqueta-->
+        <id>http://www.feedforall.com/feedforall-partners.htm</id> <!-- He cambiado 'guid' por 'id' porque este último es el que se utiliza en Atom-->
+        <updated>2004-10-02T10:00:00Z</updated> <!-- He cambiado la etiqueta 'pubDated' por su etiqueta equivalente en atom, 'updated', también he cambiado la manera de poner la fecha y la hora-->
+    </entry>
+</feed>

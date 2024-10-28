@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #azul, #rojo{
+                height: 120px;
+                width: 160px;
+                position: absolute;
+            }
+            #amarillo, #verde{
+                height: 40px;
+                width: 40px;
+                position: relative;
+            }
+            #azul{
+                background-color: blue;
+                left: 20px;
+                top: 40px;
+                z-index: 1;
+            }
+            #amarillo{
+                background-color: yellow;
+                margin-left: 20px;
+                margin-top: 20px;
+                
+            }
+            #rojo{
+                background-color: red;
+                left: 100px;
+                top: 140px;
+            }
+            #verde{
+                background-color: green;
+                margin-top: 60px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="azul">
+            <div id="amarillo">
+
+            </div>
+        </div>
+
+        <div id="rojo">
+            <div id="verde">
+
+            </div>
+        </div>
+    </body>
+</html>

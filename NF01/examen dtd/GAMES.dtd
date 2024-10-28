@@ -1,0 +1,9 @@
+<!ELEMENT GAMES (BOARDGAME*, VIDEOGAME*)> <!-- Declarem l'element arrel i els seus fills-->
+<!ELEMENT BOARDGAME (TITLE, GENERE, DESIGNER, YEAR)> <!-- Declarem les etiquetes fill de BOARDGAME-->
+<!ELEMENT TITLE (#PCDATA)> <!-- Declarem el tipus d'iformació #PCDATA dins de TITLE perquè trobem una cadena de text i aquest pot variar depenent del BOARDGAME-->
+<!ELEMENT GENERE (#PCDATA)> <!-- Declarem el tipus d'iformació #PCDATA dins de GENERE perquè hi ha diferents tipus de genere als jocs-->
+<!ELEMENT DESIGNER (#PCDATA)> <!-- Declarem el tipus d'iformació #PCDATA dins de DESIGNER perquè pot ser un diferent disenyador el que hagi fet el joc-->
+<!ELEMENT YEAR (#PCDATA)> <!-- Declarem el tipus d'iformació #PCDATA dins de YEAR perquè l'any de creació del joc pot variar-->
+<!ELEMENT VIDEOGAME (TITLE, GENERE, DESIGNER, YEAR)> <!-- Declarem les etiquetes fill de VIDEOGAME-->
+<!ATTLIST BOARDGAME maxplayers CDATA #REQUIRED> <!-- Declarem l'atribut maxplayers dins l'etiqueta BOARDGAME i el tipus de dada CDATA perquè la quantitat màxima de jugadors pot variar -->
+<!ATTLIST VIDEOGAME maxplayers CDATA #REQUIRED> 

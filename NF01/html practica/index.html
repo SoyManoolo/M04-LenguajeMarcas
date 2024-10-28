@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Como hacer un Hello World</title>
+    </head>
+    <body>
+        <h1 class="titulo">Hello World</h1>
+        <div class="section">
+            <h2>¿Qué necesito?</h2>
+                <p class="parrafo">
+                    Antes de todo un ordenador o portatil, no hace falta que sea el mejor, con algo básico es suficiente. 
+                    <br>Una vez obtenido el ordenador solamente debe descargarse la aplicación correspondiente dependiendo del lenguaje que quiera utilizar.
+                    <br>Por ejemplo, si desea utilizar Python, descarguese PyCharm, si desea escribir en Java puede descargarse IntelliJ IDEA y así con los demás lenguajes.
+                    <br>Si no quiere quedarse con un solo lenguaje puede probar a utilizar VSC (Visual Studio Code) y aunque disponga de pluggins o extensiones resulta un poco más limitado que los IDE (entorno de desarrollo integrado)
+                </p>
+        </div>
+
+        <div class="section">
+            <h2>¿Como comenzar?</h2>
+                <p class="parrafo">
+                    Primero debemos crear un nuevo proyecto con el nombre que queramos, pero preferiblemente Hello World, dentro de la aplicación donde deseamos hacer el Hello World.
+                <br>Ahora enseñaré los pasos a seguir con los lenguajes más comunes y usados explicando la función de todo lo que se vaya escribiendo.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Python</h3>
+                <p class="parrafo">
+                    Con Python es muy sencillo, lo único que debemos hacer es escribir 'print', lo que hace este comando es mostrar una cadena de texto en la terminal o pantalla, seguidamente ponemos entre paréntesis y comillas dobles el texto que queremos que aparezca por pantalla.
+                <br>Los comandos en pantalla se verán de esta manera:
+                </p>
+                    <div class="code">
+                        <p class="codigo">
+                                print("Hello, World!")
+                        </p>
+                        
+                    </div>
+            <img class="imagen" src="python.jpeg" alt="Python logo">
+        </div>
+
+
+        <div class="section">
+            <h3>JavaScript</h3>
+                <p class="parrafo">
+                    En este caso tambien es bastante sencillo, si quieres que se muestre en el terminal lo único que debes hacer es abrir la etiqueta script y dentro escribir console.log y luego entre parentesis y comillas dobles el texto que queremos que aparezca en el terminal. Se vería así:
+                </p>
+                    <div class="code">
+                        <p class="codigo">
+                                &lt; script &gt;
+                                <br> &nbsp; &nbsp; &nbsp; console.log("Hello, World!");
+                                <br> &lt; /script &gt;
+                                <br> Si quieres que el texto salga en una página web en vez de una terminal lo único que debes cambiar es el console.log por el document write, quedaría de la siguiente manera:
+                                <br> &lt; script &gt;
+                                <br> &nbsp; &nbsp; &nbsp; document.write("Hello, World!");
+                                <br> &lt; /script &gt;
+                        </p>
+                        
+                    </div>
+            <img class="imagen" src="javaScript.png" alt="JavaScript logo">
+        </div>
+
+        <div class="section">
+            <h3>Java</h3>
+                <p class="parrafo">En Java ya es un poquito más complicado que el resto de lenguajes explicados anteriormente, pero no es nada del otro mundo.
+                    <br>Lo primero que se debe de hacer es crear una clase con el nombre que queramos y decir que tipo de privacidad tendrá, normalmente las clases son públicas y se declaran con 'public class NombreDeLaClase' luego debemos llamar el método main escribiendo main y apretando el 'Enter', main es el método que se ejecuta cuando inicias un programa. Luego escribimos sout (System.out.println()) y entre los parentesis y comillas dobles escribimos 'Hello, World!', quedaría así:
+                </p>    
+                <div class="code">
+                    <p class="codigo">
+                            public class HelloWorld {
+                            <br>public static void main(String[] args) {
+                            <br>System.out.println("Hello, World!");
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>}
+                    </p>
+                    </div>  
+                
+            <img class="imagen" src="java.png" alt="Java logo">
+        </div>
+        
+        <div class="section">
+            <h3>C++</h3>
+                <p>
+                    En C++ hay diversas formas de mostrar Hello, World! por pantalla o terminal pero una de las opciones que considero más sencillas es la siguiente:
+                    Primero escogemos la biblioteca de entrada y salida, en este caso es &lt;studio.h&gt; luego decimos donde comienza la función principal del programa con int main, seguidamente indicamos que vamos a imprimir texto por pantalla con printf y entre los paréntesis y comillas dobles escribimos el texto que queremos que aparezca por pantalla.
+                    <br>El codigo escrito se ve de la siguiente manera:
+                </p>
+                    <div class="code">
+                        <p class="codigo">
+                            <br>
+                            <br>
+                                #include &lt; stdio.h &gt;
+                                <br> &nbsp; &nbsp; &nbsp; &nbsp; int main() {
+                                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; printf("Hello World!");
+                                <br>&nbsp; &nbsp; &nbsp; &nbsp; }
+                        </p>
+                    </div>
+                
+            <img class="imagen" src="c++.png" alt="C++ logo">
+        </div>
+        
+        <iframe class="video" src="https://www.youtube.com/embed/s6b9w7aV7mo?si=6criCS7tEQAc7uoK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <br>
+        <p>Si tens cap problema o dubte contacta amb nosaltres fent click <a href="contacte.html">aquí.</a></p>
+    </body>
+</html>

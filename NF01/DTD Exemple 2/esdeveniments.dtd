@@ -1,0 +1,17 @@
+<!ELEMENT arrel (c:esdeveniments, t:esdeveniments)>
+<!ELEMENT c:esdeveniments (c:esdeveniment*)>
+<!ELEMENT c:esdeveniment (c:grup, c:lloc, c:data, c:entrada)>
+<!ELEMENT c:grup (#PCDATA)>
+<!ELEMENT c:lloc (#PCDATA)>
+<!ELEMENT c:data (#PCDATA)>
+<!ELEMENT c:entrada (#PCDATA)>
+<!ELEMENT t:esdeveniments (t:esdeveniment*)>
+<!ELEMENT t:esdeveniment (t:companyia, t:lloc, t:data, t:entrada)>
+<!ELEMENT t:companyia (#PCDATA)>
+<!ELEMENT t:lloc (#PCDATA)>
+<!ELEMENT t:data (#PCDATA)>
+<!ELEMENT t:entrada (#PCDATA)>
+<!ATTLIST arrel xmlns CDATA #REQUIRED>
+<!ATTLIST arrel xmlns:c CDATA #REQUIRED>
+<!ATTLIST arrel xmlns:t CDATA #REQUIRED>
+<!ATTLIST c:entrada gratuita (si|no) "no">

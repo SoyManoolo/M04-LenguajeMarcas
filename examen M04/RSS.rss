@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel> <!-- He añadido channel porque sino no tendrá definida una sección principal-->
+        <atom:link href="" rel="self" type="application/rss+xml" />        <title>RSS Title</title>
+        <description>This is an example of an RSS feed</description>
+        <link>http://www.example.com/main.html</link>
+        <lastBuildDate>Mon, 06 Sep 2010 00:01:00 +0000 </lastBuildDate>
+        <pubDate>Sun, 06 Sep 2009 16:20:00 EST</pubDate> <!-- He cambiado el GMZ por EST debido a que daba error en la fecha-->
+        <ttl>1800</ttl>
+        <item> <!-- He cambiado post por item, ya que item es la etiqueta correcta en RSS para los diferentes articulos que puedan haber dentro del feed-->
+            <title>Example entry</title>
+            <description>
+                Here is some text containing an interesting description.
+            </description>
+            <link>http://www.example.com/blog/post/1</link>
+            <guid isPermaLink="false">7bd204c6-1655-4c27-aeee-53f933c5395f</guid> <!-- He cambiado id por guid, ya que id es la etiqueta utilizada en Atom y no en RSS para proporcionar el identificador-->
+            <pubDate>Sun, 06 Sep 2009 16:20:00 +0000</pubDate>
+            <category>category1</category>
+            <category>category2</category>
+            <author>pacopaquito@gmail.com (Paco Gonzalez)</author> <!-- He añadido un autor de la noticia porque el ejercicio me pide añadir una etiqueta que no haya sido usada y que sea compatible con RSS-->
+        </item>
+    </channel>
+</rss>

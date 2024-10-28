@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GAMES SYSTEM "GAMES.dtd">
+<GAMES>
+    <BOARDGAME maxplayers="8">
+        <TITLE>Risk</TITLE>
+        <GENERE>strategy</GENERE>
+        <DESIGNER>Albert Lammorisse</DESIGNER>
+        <YEAR>1958</YEAR>
+    </BOARDGAME>
+    <VIDEOGAME maxplayers="1">
+        <TITLE>Xenoblade Chronicles 2</TITLE>
+        <GENERE>ROL</GENERE>
+        <DESIGNER>Koji Hayashi</DESIGNER>
+        <YEAR>2017</YEAR>
+    </VIDEOGAME>
+    <VIDEOGAME maxplayers="4">
+        <TITLE>Contra</TITLE>
+        <GENERE>Run and Gun</GENERE>
+        <DESIGNER>Koji Hiroshita</DESIGNER>
+        <YEAR>1987</YEAR>
+    </VIDEOGAME>
+</GAMES>

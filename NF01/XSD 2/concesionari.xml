@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concessionari>
+	<cotxe marca="renault">
+		<model>Capture</model>
+		<nou valor="si"/>
+		<color>Blanc</color>
+	</cotxe>
+	<cotxe marca="audi">
+		<model>A3</model>
+		<nou valor="si"/>
+		<color>Vermell</color>
+	</cotxe>
+	<furgoneta marca="seat">
+		<model>Ibiza</model>
+		<nou valor="si"/>
+		<color>Blau</color>
+	</furgoneta>
+</concessionari>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://elpuig.xeill.net/MP04/XSD"
+           targetNamespace="https://elpuig.xeill.net/MP04/XSD" 
+           elementFormDefault="qualified">
+
+    <xs:element name="MUSIC"> <!-- Declarem l'element arrel-->
+        <xs:complexType>
+            <xs:sequence> <!-- Dins de sequence declarem els elements fills de MUSIC-->
+                <xs:element name="EXTENDED" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence> <!-- Dins de sequence declarem els elements fills d'EXTENDED i el seu tipus-->
+                            <xs:element name="TITLE" type="xs:string"/> <!-- Es de tipus xs:string perque el titol pot variar-->
+                            <xs:element name="ARTIST" type="xs:string"/> <!-- Es de tipus xs:string perque l'artista varia-->
+                            <xs:element name="COMPANY" type="xs:string"/> <!-- Es de tipus xs:string perque la companyia varia-->
+                            <xs:element name="YEAR" type="xs:integer"/> <!-- Es de tipus xs:integer perque l'any pot variar-->
+                        </xs:sequence>
+                        <xs:attribute name="plataform" type="xs:string"/> <!-- Declarem l'atribut plataform dins de l'etiqueta EXTENDED amb tipus xs:string perque hi ha diferents tipus de plataforma-->
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="LONG" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TITLE" type="xs:string"/>
+                            <xs:element name="ARTIST" type="xs:string"/>
+                            <xs:element name="COMPANY" type="xs:string"/>
+                            <xs:element name="YEAR" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="plataform" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

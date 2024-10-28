@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Contacte</title>
+</head>
+<body>
+    <form action="formResult.html">
+        <table class="tabla">
+            <tr>
+                <th>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" placeholder="El teu nom" required>
+                </th>
+                <th>
+                    <label for="cognom">Cognom:</label>
+                    <input type="text" id="cognom" placeholder="El teu cognom" required>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="edat">Edat:</label>
+                    <input type="number" id="edat" placeholder="La teva edat" required>
+                </th>
+                <th>
+                    <label for="correu">Correu electrònic</label>
+                    <input type="text" id="correu" placeholder="abc123@gmail.com" required>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label>Genere:</label>
+                </th>
+                <th>
+                    <label>Idioma de la resposta:</label>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="home">Home</label>
+                    <input type="radio" id="home" value="Home" name="genere">
+                </td>
+                <td>
+                    <label for="catala">Català</label>
+                    <input type="checkbox" id="catala" name="idioma" value="Catala" checked>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dona">Dona</label>
+                    <input type="radio" id="dona" value="Dona" name="genere">
+                </td>
+                <td>
+                    <label for="castella">Castella</label>
+                    <input type="checkbox" id="castella" name="idioma" value="Castella">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="altres">Altres</label>
+                    <input type="radio" id="altres" value="Altres" name="genere">
+                </td>
+                <td>
+                    <label for="angles">Anglès</label>
+                    <input type="checkbox" id="angles" name="idioma" value="Angles">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="contacte">Tipus de contacte:</label>
+                    <select name="contacte" id="contacte">
+                        <option value="Sugeriment">Sugeriment</option>
+                        <option value="Reclamacio">Reclamació</option>
+                        <option value="Altres">Altres</option>
+                    </select>
+                </th>
+                <th>
+                    <label for="comentari">Comentari:</label>
+                    <input type="text" id="comentari" placeholder="Introduiu el comentari">
+                </th>
+            </tr>
+        </table>
+        <br>
+        <input class="float" type="reset" value="Resetear formulario">
+        <br>
+        <br>
+        <input class="float" type="submit" value="Enviar formulario">
+    </form>
+    <p>
+        <br>Després d'enviar el formular et contactarem dins de 2 a 3 dies.
+    </p>
+</body>
+</html>

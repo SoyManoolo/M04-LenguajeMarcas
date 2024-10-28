@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="concessionari">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cotxe">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="nou">
+                                <xs:complexType>
+                                    <xs:attribute name="valor">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="si"/>
+                                                <xs:enumeration value="no"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="color" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="furgoneta">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="nou">
+                                <xs:complexType>
+                                    <xs:attribute name="valor">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="si"/>
+                                                <xs:enumeration value="no"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="color" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

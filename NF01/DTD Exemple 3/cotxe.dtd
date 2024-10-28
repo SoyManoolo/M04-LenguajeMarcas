@@ -1,0 +1,9 @@
+<!ELEMENT concessionari (cotxe*, furgoneta*)> <!--Declarem que l'etiqueta concessionari te dues etiquetes fill: cotxe i furgoneta (poden ser 0,1 o més d'1)-->
+<!ELEMENT cotxe (model, nou, color)> <!--Declarem les etiquetes fill de cotxe-->
+<!ELEMENT model (#PCDATA)> <!--Declarem el tipus de dada que s'ha d'escriure a l'etiqueta model-->
+<!ELEMENT nou EMPTY> <!--Declarem que no s'ha d'escriure res a l'etiqueta nou-->
+<!ELEMENT color (#PCDATA)> <!--Declarem el tipus de dada que s'ha d'escriure a l'etiqueta color-->
+<!ELEMENT furgoneta (model, nou, color)> <!--Declarem les etiquetes fill de furgoneta-->
+<!ATTLIST cotxe marca CDATA #REQUIRED> <!--Declarem el tipus de dada que s'ha d'escriure a l'atribut marca situada a l'etiqueta cotxe-->
+<!ATTLIST furgoneta marca CDATA #REQUIRED> <!--Declarem el tipus de dada que s'ha d'escriure a l'atribut marca situada a l'etiqueta furgoneta-->
+<!ATTLIST nou valor (si|no) "si"> <!--Declarem el tipus de dada que s'ha d'escriure a l'atribut valor situada a l'etiqueta nou-->
